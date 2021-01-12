@@ -1,0 +1,80 @@
+import java.util.Scanner;
+public class ZodiacSign{
+  public static void main(String[] args){
+    Scanner a = new Scanner(System.in);
+    System.out.println("Enter your birth month.");
+   
+    int month = a.nextInt();
+   
+    System.out.println("Enter your birth day.");
+    int day = a.nextInt();
+   
+    int dateRange = month;
+      String monthString;
+        switch (dateRange) {
+            case 1:  monthString = "January";
+            if(day>20){
+              System.out.println("Your zodiac sign is Aquarius");
+            }              
+                     break;
+            case 2:  monthString = "February";
+            if(day>19 ){
+              System.out.println("Your zodiac sign is Pisces");
+            } 
+                     break;
+            case 3:  monthString = "March";
+              if(day>20 ){
+              System.out.println("Your zodiac sign is Aries");
+            }
+                     break;
+            case 4:  monthString = "April";
+            if(day>21 ){
+              System.out.println("Your zodiac sign is Taurus");
+            }
+                     break;
+            case 5:  monthString = "May";
+              if(day>20 ){
+              System.out.println("Your zodiac sign is Gemini");
+                     break;
+              }
+            case 6:  monthString = "June";
+                if(day>20 ){
+              System.out.println("Your zodiac sign is Cancer");
+                }
+                     break;
+            case 7:  monthString = "July";
+                  if(day>20 ){
+              System.out.println("Your zodiac sign is Leo");
+                  }
+                     break;
+            case 8:  monthString = "August";
+            if(day>19 ){
+              System.out.println("Your zodiac sign is Virgo");
+            }
+                     break;
+            case 9:  monthString = "September";
+            if(day>19 ){
+              System.out.println("Your zodiac sign is Libra");
+            }
+                     break;
+            case 10: monthString = "October";
+            if(day>20 ){
+              System.out.println("Your zodiac sign is Scorpio");
+                     break;
+            }
+            case 11: monthString = "November";
+            if(day>19 ){
+              System.out.println("Your zodiac sign is sAGITTARIUS");
+            }
+                     break;
+            case 12: monthString = "December";
+            if(day>19 ){
+              System.out.println("Your zodiac sign is capricorn");
+                     break;
+            }
+            default: monthString = "Invalid month";
+                     break;
+                     
+        }
+  }
+}
